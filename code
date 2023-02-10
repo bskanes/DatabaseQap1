@@ -1,0 +1,232 @@
+-- Insert statements for all example data
+
+INSERT INTO public."Cities"(
+	id, name, state, population)
+	VALUES (111111, 'Detroit', 'Michigan', '352100');
+INSERT INTO public."Cities"(
+	id, name, state, population)
+	VALUES (111222, 'Oakland', 'California', '440981');
+INSERT INTO public."Cities"(
+	id, name, state, population)
+	VALUES (111333, 'Mendota', 'California', '13069');
+INSERT INTO public."Cities"(
+	id, name, state, population)
+	VALUES (111444, 'Florida City', 'Florida', '12735');
+INSERT INTO public."Cities"(
+	id, name, state, population)
+	VALUES (111555, 'Makaha', 'Hawaii', '10087');
+INSERT INTO public."Cities"(
+	id, name, state, population)
+	VALUES (111666, 'Cleveland', 'Ohio', '367991');
+INSERT INTO public."Cities"(
+	id, name, state, population)
+	VALUES (111777, 'St.Louis', 'Missouri', '293310');
+INSERT INTO public."Cities"(
+	id, name, state, population)
+	VALUES (111888, 'Little Rock', 'Arkansas', '201998');
+INSERT INTO public."Cities"(
+	id, name, state, population)
+	VALUES (111999, 'Baltimore', 'Maryland', '567498');
+INSERT INTO public."Cities"(
+	id, name, state, population)
+	VALUES (111000, 'Rock Ford', 'Illinios', '147711');
+
+INSERT INTO public.aircraft(
+	id, airline_name, passenger_number)
+	VALUES (100, 'Boeing 737-200', '119');
+INSERT INTO public.aircraft(
+	id, airline_name, passenger_number)
+	VALUES (101, 'Airbus A340', '320');
+INSERT INTO public.aircraft(
+	id, airline_name, passenger_number)
+	VALUES (102, 'BombArdier CRJ-200', '78');
+INSERT INTO public.aircraft(
+	id, airline_name, passenger_number)
+	VALUES (103, 'Tupolev Tu-204', '210');
+INSERT INTO public.aircraft(
+	id, airline_name, passenger_number)
+	VALUES (104, 'Embraer EMB-120', '50');
+INSERT INTO public.aircraft(
+	id, airline_name, passenger_number)
+	VALUES (105, 'Antonov An-32', '65');
+INSERT INTO public.aircraft(
+	id, airline_name, passenger_number)
+	VALUES (106, 'Ilyushin Il-96', '200');
+INSERT INTO public.aircraft(
+	id, airline_name, passenger_number)
+	VALUES (107, 'COMAC ARJ21', '235');
+INSERT INTO public.aircraft(
+	id, airline_name, passenger_number)
+	VALUES (108, 'Airbus A380', '90');
+INSERT INTO public.aircraft(
+	id, airline_name, passenger_number)
+	VALUES (109, 'Ilyushin Il-62', '198');
+
+INSERT INTO public.airports(
+	id, name, code, "Cities")
+	VALUES (1, ' Detroit Metropolitan Airport', '48242', 'Detroit');
+INSERT INTO public.airports(
+	id, name, code, "Cities")
+	VALUES (2, 'Oaklanda International Airport', '94621', 'Oakland');
+INSERT INTO public.airports(
+	id, name, code, "Cities")
+	VALUES (3, 'William Robert Johnston Municipal Airport', '93640', 'Mendota');
+INSERT INTO public.airports(
+	id, name, code, "Cities")
+	VALUES (4, 'Miami International Airport', '33142', 'Miami');
+INSERT INTO public.airports(
+	id, name, code, "Cities")
+	VALUES (5, 'Molokai Airport', '96729', 'Ho olehue');
+INSERT INTO public.airports(
+	id, name, code, "Cities")
+	VALUES (6, 'Cleveland International Airport', '44135', 'Cleveland');
+INSERT INTO public.airports(
+	id, name, code, "Cities")
+	VALUES (7, 'St.Louis Lambert International Airport', '63145', 'St.Louis');
+INSERT INTO public.airports(
+	id, name, code, "Cities")
+	VALUES (8, 'Bill and Hillary Clinton National Airport', '72202', 'Little Rock');
+INSERT INTO public.airports(
+	id, name, code, "Cities")
+	VALUES (9, 'BW International Thurgood Marshall Airport', '21240', 'Baltimore');
+INSERT INTO public.airports(
+	id, name, code, "Cities")
+	VALUES (10, 'Chicago Rockford International Airport', '61109', 'Rock Ford');
+
+INSERT INTO public.passengers(
+	id, first_name, last_name, phone_number)
+	VALUES (1, 'Chad', 'Boski', '789-5448');
+INSERT INTO public.passengers(
+	id, first_name, last_name, phone_number)
+	VALUES (2, 'Mark', 'Hamill', '256-7789');
+INSERT INTO public.passengers(
+	id, first_name, last_name, phone_number)
+	VALUES (3, 'Will', 'Johnson', '368-4219');
+INSERT INTO public.passengers(
+	id, first_name, last_name, phone_number)
+	VALUES (4, 'Kyle', 'Power', '754-2261');
+INSERT INTO public.passengers(
+	id, first_name, last_name, phone_number)
+	VALUES (5, 'Haley', 'Smith', '451-1985');
+INSERT INTO public.passengers(
+	id, first_name, last_name, phone_number)
+	VALUES (6, 'Jenna', 'Taylor', '653-5891');
+INSERT INTO public.passengers(
+	id, first_name, last_name, phone_number)
+	VALUES (7, 'John', 'Bradley', '722-2163');
+INSERT INTO public.passengers(
+	id, first_name, last_name, phone_number)
+	VALUES (8, 'Megan', 'Lewis', '451-5692/');
+INSERT INTO public.passengers(
+	id, first_name, last_name, phone_number)
+	VALUES (9, 'Ashley', 'Sampson', '569-6252');
+INSERT INTO public.passengers(
+	id, first_name, last_name, phone_number)
+	VALUES (10, 'Adam', 'West', '754-9836');
+
+INSERT INTO public."travel_history"(
+	id, passenger_id, aircraft_id, airport_id)
+	VALUES (1, '2', '101', '10');
+INSERT INTO public."travel_history"(
+	id, passenger_id, aircraft_id, airport_id)
+	VALUES (2, '6', '100', '3');
+INSERT INTO public."travel_history"(
+	id, passenger_id, aircraft_id, airport_id)
+	VALUES (3, '9', '101', '5');
+INSERT INTO public."travel_history"(
+	id, passenger_id, aircraft_id, airport_id)
+	VALUES (4, '1', '106', '6');
+INSERT INTO public."travel_history"(
+	id, passenger_id, aircraft_id, airport_id)
+	VALUES (5, '4', '105', '3');
+INSERT INTO public."travel_history"(
+	id, passenger_id, aircraft_id, airport_id)
+	VALUES (6, '10', '108', '1');
+INSERT INTO public."travel_history"(
+	id, passenger_id, aircraft_id, airport_id)
+	VALUES (7, '4', '109', '7');
+INSERT INTO public."travel_history"(
+	id, passenger_id, aircraft_id, airport_id)
+	VALUES (8, '3', '107', '8');
+
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (1, '100', '111222', '111666');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (2, '100', '111666', '111333');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (3, '101', '111111', '111000');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (4, '102', '111333', '111222');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (5, '102', '111555', '111222');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (6, '102', '111999', '111000');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (7, '103', '111666', '111888');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (8, '104', '111888', '111444');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (9, '104', '111333', '111999');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (10, '104', '111777', '111000');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (11, '105', '111111', '111555');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (12, '106', '111444', '111666');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (13, '106', '111888', '111111');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (14, '107', '111999', '111111');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (15, '107', '111000', '111333');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (16, '107', '111222', '111000');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (17, '107', '111444', '111555');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (18, '108', '111000', '111555');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (19, '109', '111444', '111999');
+INSERT INTO public."flight_paths"(
+	id, aircraft_id, takeoff_location, land_location)
+	VALUES (20, '109', '111111', '111000');
+
+
+-- select statements
+
+-- - What airports are in what cities?
+select * from airports a, cities c 
+where a.city_id = c.id;
+
+-- - List all aircraft passengers have travelled on?
+-- - What airports have passengers used?
+select * from travel_history t, passengers p, aircraft c, airports a
+where t.passenger_id = p.id
+and t.aircraft_id = c.id
+and t.airport_id = a.id;  
+-- will show answers for both aircraft and airports visited^^
+
+-- - Which airports can aircraft take off from and land at?(i did cities instead of airports by mistake)
+select * from flight_paths f, aircraft a, cities c
+where f.aircraft_id = a.id 
+and f.takeoff_location = c.id
+and f.land_location = c.id
